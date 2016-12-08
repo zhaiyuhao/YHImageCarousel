@@ -1,0 +1,356 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		063A99C11DF9046F0080B193 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 063A99C01DF9046F0080B193 /* main.m */; };
+		063A99C41DF9046F0080B193 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 063A99C31DF9046F0080B193 /* AppDelegate.m */; };
+		063A99C71DF9046F0080B193 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 063A99C61DF9046F0080B193 /* ViewController.m */; };
+		063A99CA1DF9046F0080B193 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 063A99C81DF9046F0080B193 /* Main.storyboard */; };
+		063A99CC1DF9046F0080B193 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 063A99CB1DF9046F0080B193 /* Assets.xcassets */; };
+		063A99CF1DF9046F0080B193 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 063A99CD1DF9046F0080B193 /* LaunchScreen.storyboard */; };
+		063A99D81DF9088B0080B193 /* ImageCarouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = 063A99D71DF9088B0080B193 /* ImageCarouselView.m */; };
+		063A99DB1DF90B790080B193 /* CarouselCellInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 063A99DA1DF90B790080B193 /* CarouselCellInfo.m */; };
+		063A99DE1DF90BD00080B193 /* CarouselSubview.m in Sources */ = {isa = PBXBuildFile; fileRef = 063A99DD1DF90BD00080B193 /* CarouselSubview.m */; };
+		063A99E11DF9310A0080B193 /* angryBirds_00.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 063A99DF1DF9310A0080B193 /* angryBirds_00.jpg */; };
+		063A99E21DF9310A0080B193 /* angryBirds_01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 063A99E01DF9310A0080B193 /* angryBirds_01.jpg */; };
+		063A99E61DF931120080B193 /* angryBirds_04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 063A99E31DF931120080B193 /* angryBirds_04.jpg */; };
+		063A99E71DF931120080B193 /* angryBirds_03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 063A99E41DF931120080B193 /* angryBirds_03.jpg */; };
+		063A99E81DF931120080B193 /* angryBirds_02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 063A99E51DF931120080B193 /* angryBirds_02.jpg */; };
+		063A99EA1DF931570080B193 /* imageInfos.plist in Resources */ = {isa = PBXBuildFile; fileRef = 063A99E91DF931570080B193 /* imageInfos.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		063A99BC1DF9046F0080B193 /* YHImageCarousel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YHImageCarousel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		063A99C01DF9046F0080B193 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		063A99C21DF9046F0080B193 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		063A99C31DF9046F0080B193 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		063A99C51DF9046F0080B193 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		063A99C61DF9046F0080B193 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		063A99C91DF9046F0080B193 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		063A99CB1DF9046F0080B193 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		063A99CE1DF9046F0080B193 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		063A99D01DF9046F0080B193 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		063A99D61DF9088A0080B193 /* ImageCarouselView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCarouselView.h; sourceTree = "<group>"; };
+		063A99D71DF9088B0080B193 /* ImageCarouselView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCarouselView.m; sourceTree = "<group>"; };
+		063A99D91DF90B790080B193 /* CarouselCellInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarouselCellInfo.h; sourceTree = "<group>"; };
+		063A99DA1DF90B790080B193 /* CarouselCellInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarouselCellInfo.m; sourceTree = "<group>"; };
+		063A99DC1DF90BD00080B193 /* CarouselSubview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarouselSubview.h; sourceTree = "<group>"; };
+		063A99DD1DF90BD00080B193 /* CarouselSubview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CarouselSubview.m; sourceTree = "<group>"; };
+		063A99DF1DF9310A0080B193 /* angryBirds_00.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = angryBirds_00.jpg; sourceTree = "<group>"; };
+		063A99E01DF9310A0080B193 /* angryBirds_01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = angryBirds_01.jpg; sourceTree = "<group>"; };
+		063A99E31DF931120080B193 /* angryBirds_04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = angryBirds_04.jpg; sourceTree = "<group>"; };
+		063A99E41DF931120080B193 /* angryBirds_03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = angryBirds_03.jpg; sourceTree = "<group>"; };
+		063A99E51DF931120080B193 /* angryBirds_02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = angryBirds_02.jpg; sourceTree = "<group>"; };
+		063A99E91DF931570080B193 /* imageInfos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = imageInfos.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		063A99B91DF9046F0080B193 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		063A99B31DF9046F0080B193 = {
+			isa = PBXGroup;
+			children = (
+				063A99BE1DF9046F0080B193 /* YHImageCarousel */,
+				063A99BD1DF9046F0080B193 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		063A99BD1DF9046F0080B193 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				063A99BC1DF9046F0080B193 /* YHImageCarousel.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		063A99BE1DF9046F0080B193 /* YHImageCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				063A99C21DF9046F0080B193 /* AppDelegate.h */,
+				063A99C31DF9046F0080B193 /* AppDelegate.m */,
+				063A99C51DF9046F0080B193 /* ViewController.h */,
+				063A99C61DF9046F0080B193 /* ViewController.m */,
+				063A99D61DF9088A0080B193 /* ImageCarouselView.h */,
+				063A99D71DF9088B0080B193 /* ImageCarouselView.m */,
+				063A99D91DF90B790080B193 /* CarouselCellInfo.h */,
+				063A99DA1DF90B790080B193 /* CarouselCellInfo.m */,
+				063A99DC1DF90BD00080B193 /* CarouselSubview.h */,
+				063A99DD1DF90BD00080B193 /* CarouselSubview.m */,
+				063A99C81DF9046F0080B193 /* Main.storyboard */,
+				063A99CB1DF9046F0080B193 /* Assets.xcassets */,
+				063A99CD1DF9046F0080B193 /* LaunchScreen.storyboard */,
+				063A99D01DF9046F0080B193 /* Info.plist */,
+				063A99BF1DF9046F0080B193 /* Supporting Files */,
+			);
+			path = YHImageCarousel;
+			sourceTree = "<group>";
+		};
+		063A99BF1DF9046F0080B193 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				063A99C01DF9046F0080B193 /* main.m */,
+				063A99E91DF931570080B193 /* imageInfos.plist */,
+				063A99DF1DF9310A0080B193 /* angryBirds_00.jpg */,
+				063A99E01DF9310A0080B193 /* angryBirds_01.jpg */,
+				063A99E51DF931120080B193 /* angryBirds_02.jpg */,
+				063A99E41DF931120080B193 /* angryBirds_03.jpg */,
+				063A99E31DF931120080B193 /* angryBirds_04.jpg */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		063A99BB1DF9046F0080B193 /* YHImageCarousel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 063A99D31DF9046F0080B193 /* Build configuration list for PBXNativeTarget "YHImageCarousel" */;
+			buildPhases = (
+				063A99B81DF9046F0080B193 /* Sources */,
+				063A99B91DF9046F0080B193 /* Frameworks */,
+				063A99BA1DF9046F0080B193 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YHImageCarousel;
+			productName = YHImageCarousel;
+			productReference = 063A99BC1DF9046F0080B193 /* YHImageCarousel.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		063A99B41DF9046F0080B193 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = zyh;
+				TargetAttributes = {
+					063A99BB1DF9046F0080B193 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 063A99B71DF9046F0080B193 /* Build configuration list for PBXProject "YHImageCarousel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 063A99B31DF9046F0080B193;
+			productRefGroup = 063A99BD1DF9046F0080B193 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				063A99BB1DF9046F0080B193 /* YHImageCarousel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		063A99BA1DF9046F0080B193 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				063A99E71DF931120080B193 /* angryBirds_03.jpg in Resources */,
+				063A99E11DF9310A0080B193 /* angryBirds_00.jpg in Resources */,
+				063A99CF1DF9046F0080B193 /* LaunchScreen.storyboard in Resources */,
+				063A99E61DF931120080B193 /* angryBirds_04.jpg in Resources */,
+				063A99CC1DF9046F0080B193 /* Assets.xcassets in Resources */,
+				063A99CA1DF9046F0080B193 /* Main.storyboard in Resources */,
+				063A99EA1DF931570080B193 /* imageInfos.plist in Resources */,
+				063A99E81DF931120080B193 /* angryBirds_02.jpg in Resources */,
+				063A99E21DF9310A0080B193 /* angryBirds_01.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		063A99B81DF9046F0080B193 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				063A99C71DF9046F0080B193 /* ViewController.m in Sources */,
+				063A99DE1DF90BD00080B193 /* CarouselSubview.m in Sources */,
+				063A99C41DF9046F0080B193 /* AppDelegate.m in Sources */,
+				063A99D81DF9088B0080B193 /* ImageCarouselView.m in Sources */,
+				063A99C11DF9046F0080B193 /* main.m in Sources */,
+				063A99DB1DF90B790080B193 /* CarouselCellInfo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		063A99C81DF9046F0080B193 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				063A99C91DF9046F0080B193 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		063A99CD1DF9046F0080B193 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				063A99CE1DF9046F0080B193 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		063A99D11DF9046F0080B193 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		063A99D21DF9046F0080B193 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		063A99D41DF9046F0080B193 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YHImageCarousel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.zyh.YHImageCarousel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		063A99D51DF9046F0080B193 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YHImageCarousel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.zyh.YHImageCarousel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		063A99B71DF9046F0080B193 /* Build configuration list for PBXProject "YHImageCarousel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				063A99D11DF9046F0080B193 /* Debug */,
+				063A99D21DF9046F0080B193 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		063A99D31DF9046F0080B193 /* Build configuration list for PBXNativeTarget "YHImageCarousel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				063A99D41DF9046F0080B193 /* Debug */,
+				063A99D51DF9046F0080B193 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 063A99B41DF9046F0080B193 /* Project object */;
+}

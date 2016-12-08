@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>imageName</key>
+		<string>angryBirds_00.jpg</string>
+		<key>showTime</key>
+		<integer>3</integer>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>angryBirds_01.jpg</string>
+		<key>showTime</key>
+		<integer>3</integer>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>angryBirds_02.jpg</string>
+		<key>showTime</key>
+		<integer>3</integer>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>angryBirds_03.jpg</string>
+		<key>showTime</key>
+		<integer>3</integer>
+	</dict>
+	<dict>
+		<key>imageName</key>
+		<string>angryBirds_04.jpg</string>
+		<key>showTime</key>
+		<integer>3</integer>
+	</dict>
+</array>
+</plist>
