@@ -17,6 +17,8 @@
 @property (nonatomic, strong) ImageCarouselView *imageCarouselView;
 @property (nonatomic, assign) NSUInteger pageWidth;
 @property (nonatomic, assign) NSUInteger pageHeight;
+@property (nonatomic, strong) UILabel *labelOne;
+@property (nonatomic, strong) UILabel *labelTwo;
 
 @end
 
@@ -26,6 +28,16 @@
     [super viewDidLoad];
     _imageCarouselView = [[ImageCarouselView alloc] initWithFrame:CGRectMake(0, 100, self.view.bounds.size.width, self.pageHeight) withDataSource:self withDelegate:self];
     [self.view addSubview:_imageCarouselView];
+    
+    _labelOne = [[UILabel alloc] initWithFrame:CGRectMake(100, 320, 200, 40)];
+    _labelOne.text = @"滚动到了第 0 页";
+    _labelOne.font = [UIFont systemFontOfSize:16];
+    [self.view addSubview:_labelOne];
+    
+    _labelTwo = [[UILabel alloc] initWithFrame:CGRectMake(100, 360, 200, 40)];
+    _labelTwo.text = @"点击了第 X 页";
+    _labelTwo.font = [UIFont systemFontOfSize:16];
+    [self.view addSubview:_labelTwo];
 }
 
 - (CGSize)sizeForPageInCarouselView:(ImageCarouselView *)carouselView {
@@ -45,11 +57,11 @@
 }
 
 - (void)carouselView:(ImageCarouselView *)carouselView didScrollToPage:(NSInteger)pageNumber {
-    NSLog(@"滚动到第 %zd 页",pageNumber);
+    _labelOne.text = [NSString stringWithFormat:@"滚动到了第 %zd 页", pageNumber];
 }
 
 - (void)carouselView:(ImageCarouselView *)carouselView didSelectPageAtIndex:(NSInteger)index {
-    NSLog(@"点击了第 %zd 页",index);
+    _labelTwo.text = [NSString stringWithFormat:@"点击了第 %zd 页", index];
 }
 
 - (NSUInteger)pageWidth {
