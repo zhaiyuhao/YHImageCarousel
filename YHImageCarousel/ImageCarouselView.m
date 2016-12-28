@@ -10,11 +10,34 @@
 
 @interface ImageCarouselView ()<UIScrollViewDelegate>
 
+/**
+ 内部scrollView
+ */
 @property (nonatomic, strong) UIScrollView *scrollView;
+
+/**
+ 每页的大小
+ */
 @property (nonatomic, assign) CGSize pageSize;
+
+/**
+ 存放containerView的数组
+ */
 @property (nonatomic, strong) NSMutableArray *containerViews;
+
+/**
+ 当前显示页的index
+ */
 @property (nonatomic, assign) NSInteger currentPageIndex;
+
+/**
+ 自动轮播定时器
+ */
 @property (nonatomic, weak) NSTimer *timer;
+
+/**
+ 轮播图片总页数
+ */
 @property (nonatomic, assign) NSInteger pageCount;
 
 @end
@@ -51,28 +74,17 @@
     self.scrollView.clipsToBounds = NO;
     self.scrollView.showsHorizontalScrollIndicator = NO;
     self.scrollView.showsVerticalScrollIndicator = NO;
-    
-    /*由于UIScrollView在滚动之后会调用自己的layoutSubviews以及父View的layoutSubviews
-     这里为了避免scrollview滚动带来自己layoutSubviews的调用,所以给scrollView加了一层父View
-     */
-    UIView *superViewOfScrollView = [[UIView alloc] initWithFrame:self.bounds];
-    [superViewOfScrollView setAutoresizingMask:UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight];
-    [superViewOfScrollView setBackgroundColor:[UIColor clearColor]];
-    [superViewOfScrollView addSubview:self.scrollView];
-    [self addSubview:superViewOfScrollView];
+    [self addSubview:self.scrollView];
 }
 
 - (void)setupUI {
     if (_dataSource && [_dataSource respondsToSelector:@selector(numberOfPagesInCarouselView:)]) {
-        // 轮播图片总页数
         self.pageCount = [_dataSource numberOfPagesInCarouselView:self];
         // 如果总页数为0，return
         if (self.pageCount == 0) {
             return;
         }
     }
-    
-    [self stopScroll];
     
     // 重置pageWidth
     if (_delegate && [_delegate respondsToSelector:@selector(sizeForPageInCarouselView:)]) {
@@ -121,15 +133,11 @@
 }
 
 - (void)startScroll {
-    CarouselSubview *middleContainerView = _containerViews[2];
-    for (CarouselCell *cell in middleContainerView.containerView.subviews) {
-        [self startScrollWithShowTime:cell.showTime];
-    }
-}
-
-- (void)startScrollWithShowTime:(NSUInteger)showTime {
     if (self.pageCount > 1 && self.timer == nil) {
-        self.timer = [NSTimer scheduledTimerWithTimeInterval:showTime target:self selector:@selector(autoNextPage) userInfo:nil repeats:YES];
+        CarouselSubview *middleContainerView = _containerViews[2];
+        for (CarouselCell *cell in middleContainerView.containerView.subviews) {
+            self.timer = [NSTimer scheduledTimerWithTimeInterval:cell.showTime target:self selector:@selector(autoNextPage) userInfo:nil repeats:YES];
+        }
     }
 }
 
@@ -147,7 +155,9 @@
 #pragma mark - ImageCarouselView API
 
 - (void)reloadData {
+    [self stopScroll];
     [self setupUI];
+    [self startScroll];
 }
 
 #pragma mark - hitTest

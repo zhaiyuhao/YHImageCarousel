@@ -79,16 +79,11 @@
 		063A99BE1DF9046F0080B193 /* YHImageCarousel */ = {
 			isa = PBXGroup;
 			children = (
+				0694D4B11E13A5A2009EEA2C /* CarouselView */,
 				063A99C21DF9046F0080B193 /* AppDelegate.h */,
 				063A99C31DF9046F0080B193 /* AppDelegate.m */,
 				063A99C51DF9046F0080B193 /* ViewController.h */,
 				063A99C61DF9046F0080B193 /* ViewController.m */,
-				063A99D61DF9088A0080B193 /* ImageCarouselView.h */,
-				063A99D71DF9088B0080B193 /* ImageCarouselView.m */,
-				063A99D91DF90B790080B193 /* CarouselCellInfo.h */,
-				063A99DA1DF90B790080B193 /* CarouselCellInfo.m */,
-				063A99DC1DF90BD00080B193 /* CarouselSubview.h */,
-				063A99DD1DF90BD00080B193 /* CarouselSubview.m */,
 				063A99C81DF9046F0080B193 /* Main.storyboard */,
 				063A99CB1DF9046F0080B193 /* Assets.xcassets */,
 				063A99CD1DF9046F0080B193 /* LaunchScreen.storyboard */,
@@ -110,6 +105,19 @@
 				063A99E31DF931120080B193 /* angryBirds_04.jpg */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0694D4B11E13A5A2009EEA2C /* CarouselView */ = {
+			isa = PBXGroup;
+			children = (
+				063A99D61DF9088A0080B193 /* ImageCarouselView.h */,
+				063A99D71DF9088B0080B193 /* ImageCarouselView.m */,
+				063A99D91DF90B790080B193 /* CarouselCellInfo.h */,
+				063A99DA1DF90B790080B193 /* CarouselCellInfo.m */,
+				063A99DC1DF90BD00080B193 /* CarouselSubview.h */,
+				063A99DD1DF90BD00080B193 /* CarouselSubview.m */,
+			);
+			name = CarouselView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,6 +357,7 @@
 				063A99D51DF9046F0080B193 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

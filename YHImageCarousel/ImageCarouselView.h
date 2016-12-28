@@ -13,6 +13,10 @@
 @protocol ImageCarouselViewDelegate;
 
 @interface ImageCarouselView : UIView
+
+/**
+ 图片数组
+ */
 @property (nonatomic, strong) NSArray *imageArray;
 @property (nonatomic, assign) id <ImageCarouselViewDataSource> dataSource;
 @property (nonatomic, assign) id <ImageCarouselViewDelegate>   delegate;
